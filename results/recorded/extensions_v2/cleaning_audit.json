@@ -1,0 +1,7 @@
+{
+  "n_examples": 6725,
+  "changed_targets": 6641,
+  "removed_calculator_annotations": 21398,
+  "gold_answers_preserved": true,
+  "policy": "Remove only <<calculator annotations>> from GSM8K training targets; retain prose, arithmetic and final answers. Validation/test stay unchanged."
+}

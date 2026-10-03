@@ -1,0 +1,12 @@
+{
+  "n_examples": 1000,
+  "accuracy": 0.521,
+  "extraction_success_rate": 0.992,
+  "conditional_accuracy": 0.5252016129032258,
+  "n_extracted": 992,
+  "n_correct": 521,
+  "mean_generated_tokens": 63.344,
+  "n_budget_reached_without_eos": 2,
+  "budget_reached_without_eos_rate": 0.002,
+  "n_extraction_failures_at_budget": 2
+}

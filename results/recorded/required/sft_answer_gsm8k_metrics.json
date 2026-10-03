@@ -1,0 +1,13 @@
+{
+  "n_examples": 1319,
+  "accuracy": 0.12054586808188021,
+  "extraction_success_rate": 0.9977255496588324,
+  "conditional_accuracy": 0.12082066869300911,
+  "n_extracted": 1316,
+  "n_correct": 159,
+  "condition": "sft_answer",
+  "benchmark": "gsm8k",
+  "run_hash": "5b8424d3201b814ae19eade5d89708e24192991618fd778b2e2da592e274f9f6",
+  "wall_clock_seconds": 38.08330503082834,
+  "peak_gpu_memory_gb": 1.4548511505126953
+}

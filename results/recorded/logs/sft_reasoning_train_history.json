@@ -1,0 +1,74 @@
+{
+  "train_loss": [
+    0.37175955331612653,
+    0.2988754995399878
+  ],
+  "val_loss": [
+    0.35869497411391316,
+    0.36020741292977715
+  ],
+  "condition": "sft_reasoning",
+  "seed": 42,
+  "num_epochs": 2,
+  "max_seq_length": 512,
+  "learning_rate": 1e-05,
+  "effective_batch_size": 2,
+  "optimizer": "AdamW",
+  "optimizer_weight_decay": 0.01,
+  "scheduler": "none",
+  "gradient_accumulation_steps": 1,
+  "loss_aggregation": "mean_of_batch_losses",
+  "lora": {
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.1,
+    "target_modules": [
+      "down_proj",
+      "gate_proj",
+      "k_proj",
+      "lm_head",
+      "o_proj",
+      "q_proj",
+      "up_proj",
+      "v_proj"
+    ]
+  },
+  "n_train_examples": 6725,
+  "n_val_examples": 748,
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "split_hash": "bfa4cd0184d025f036f1e8b9edb2893c9be6efb81c5ced24711695b3c7c88aea",
+  "code_hash": "3ea129bd9aaf0bca79b0c726841d71edc12cbd2475649b907d52317b5cedb697",
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.57.1",
+    "datasets": "4.2.0",
+    "bitsandbytes": "0.48.1",
+    "accelerate": "1.10.1",
+    "ipykernel": "6.30.1",
+    "scikit-learn": "1.7.2",
+    "pandas": "2.3.3"
+  },
+  "wall_clock_seconds": 670.779270788189,
+  "peak_gpu_memory_gb": 7.891783237457275,
+  "n_base_params": 1543714304,
+  "n_total_params": 1554174464,
+  "n_trainable_params": 10460160,
+  "trainable_param_pct": 0.6730364088648416,
+  "trainable_param_fraction": 0.006730364088648416,
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.1,
+  "lora_target_modules": [
+    "down_proj",
+    "gate_proj",
+    "k_proj",
+    "lm_head",
+    "o_proj",
+    "q_proj",
+    "up_proj",
+    "v_proj"
+  ],
+  "status": "complete",
+  "fingerprint": "f49312418664f653942edeb2f4dcbb840e4a397ed6d7b1922ab07838fcf2bee3",
+  "adapter_sha256": "261d60808bc53a262491281049459d982089e19e32861a0c80405f5570ad2c6e"
+}

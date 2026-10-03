@@ -1,0 +1,42 @@
+{
+  "dataset": "MathQA",
+  "source_url": "https://math-qa.github.io/math-QA/data/MathQA.zip",
+  "source_zip_sha256": "7344f30456a7aef3176d4866cc953b35b41bec44eda6b00cdbcfde2876b2f07a",
+  "source_train_member_sha256": "00e8919347d65dbba9289bf04ed998a6c48dbf451ca909eeb66a35f2419c2bf6",
+  "source_split": "train",
+  "source_count": 29837,
+  "sampling_seed": 20260927,
+  "eligible_unique_count": 3440,
+  "selected_count": 2000,
+  "rejected_counts": {
+    "SyntaxError": 239,
+    "ZeroDivisionError": 6,
+    "ambiguous_options": 1287,
+    "choice_dependent_question": 37,
+    "extreme_result": 14,
+    "formula_answer_mismatch": 5289,
+    "formula_too_long": 519,
+    "internal_duplicate_or_near_duplicate": 4968,
+    "invalid_question": 45,
+    "no_question_number_in_formula": 94,
+    "non_numeric_option": 9925,
+    "unsupported_formula": 29,
+    "unsupported_operation": 3945
+  },
+  "overlap_rejections": [],
+  "protected_question_count": 9792,
+  "numeric_policy": "Correct choice must be a single unit-free number/fraction and exactly match a whitelist arithmetic program.",
+  "target_policy": "Question without options; worked arithmetic trace derived from annotated_formula, then #### numeric answer. Original noisy rationale is excluded.",
+  "overlap_policy": "Normalized exact; number-masked exact; token-set Jaccard >= 0.90; word-trigram Jaccard >= 0.80. Also applied within the external pool.",
+  "scope": "Lexical checks cover the supplied GSM8K/SVAMP questions. Paraphrased overlap and logically wrong but numerically matching source programs can remain.",
+  "category_counts": {
+    "general": 1076,
+    "physics": 420,
+    "gain": 278,
+    "geometry": 45,
+    "other": 155,
+    "probability": 26
+  },
+  "input_protocol_hash": "eb789645c70c35112cd78e605ccd206da2de5bab29efeb04c6c9b9cf45262da9",
+  "selected_data_hash": "61dc389aa6c3ebba842b16435e10f2810243be0af1abb7f1c800ba88e69d6d3a"
+}

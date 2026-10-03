@@ -1,0 +1,13 @@
+{
+  "n_examples": 1000,
+  "accuracy": 0.557,
+  "extraction_success_rate": 0.995,
+  "conditional_accuracy": 0.5597989949748744,
+  "n_extracted": 995,
+  "n_correct": 557,
+  "condition": "sft_reasoning",
+  "benchmark": "svamp",
+  "run_hash": "2466f84bbd1918d102ecc5472a9948428f3abde8a0891125eb2b754c0b23588e",
+  "wall_clock_seconds": 401.61853102897294,
+  "peak_gpu_memory_gb": 1.3207993507385254
+}

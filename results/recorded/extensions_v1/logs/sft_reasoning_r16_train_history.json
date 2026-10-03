@@ -1,0 +1,75 @@
+{
+  "train_loss": [
+    0.3708744846304329,
+    0.28179104583198883
+  ],
+  "val_loss": [
+    0.357746697484172,
+    0.3645171538832035
+  ],
+  "condition": "sft_reasoning_r16",
+  "seed": 42,
+  "num_epochs": 2,
+  "max_seq_length": 512,
+  "learning_rate": 1e-05,
+  "effective_batch_size": 2,
+  "optimizer": "AdamW",
+  "optimizer_weight_decay": 0.01,
+  "scheduler": "none",
+  "gradient_accumulation_steps": 1,
+  "loss_aggregation": "mean_of_batch_losses",
+  "lora": {
+    "rank": 16,
+    "alpha": 32,
+    "dropout": 0.1,
+    "target_modules": [
+      "down_proj",
+      "gate_proj",
+      "k_proj",
+      "lm_head",
+      "o_proj",
+      "q_proj",
+      "up_proj",
+      "v_proj"
+    ]
+  },
+  "n_train_examples": 6725,
+  "n_val_examples": 748,
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "split_hash": "bfa4cd0184d025f036f1e8b9edb2893c9be6efb81c5ced24711695b3c7c88aea",
+  "code_hash": "3ea129bd9aaf0bca79b0c726841d71edc12cbd2475649b907d52317b5cedb697",
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.57.1",
+    "datasets": "4.2.0",
+    "bitsandbytes": "0.48.1",
+    "accelerate": "1.10.1",
+    "ipykernel": "6.30.1",
+    "scikit-learn": "1.7.2",
+    "pandas": "2.3.3"
+  },
+  "wall_clock_seconds": 713.9190362480003,
+  "peak_gpu_memory_gb": 8.053645133972168,
+  "n_base_params": 1543714304,
+  "n_total_params": 1564634624,
+  "n_trainable_params": 20920320,
+  "trainable_param_pct": 1.3370738240802218,
+  "trainable_param_fraction": 0.013370738240802219,
+  "lora_rank": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.1,
+  "lora_target_modules": [
+    "down_proj",
+    "gate_proj",
+    "k_proj",
+    "lm_head",
+    "o_proj",
+    "q_proj",
+    "up_proj",
+    "v_proj"
+  ],
+  "status": "complete",
+  "fingerprint": "d570617e2b2ae892b913812423f87feb1f4818f8822ebda8a557284e87687f42",
+  "adapter_sha256": "5012b239e056116c0178f59cee4d05e67164b7db50b3ccb32b9b806dfaaaa43f",
+  "extension_protocol_hash": "34076c1808d8d201c02cc51d69c6a5e464517fd67491207de0a57c386978b4f6"
+}

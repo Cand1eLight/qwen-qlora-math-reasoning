@@ -1,0 +1,78 @@
+{
+  "train_loss": [
+    0.3551951511352127,
+    0.25904356054201766
+  ],
+  "val_loss": [
+    0.36110269632887715,
+    0.3814854437614826
+  ],
+  "condition": "sft_reasoning_repeat_control",
+  "seed": 42,
+  "num_epochs": 2,
+  "max_seq_length": 512,
+  "learning_rate": 1e-05,
+  "effective_batch_size": 2,
+  "optimizer": "AdamW",
+  "optimizer_weight_decay": 0.01,
+  "scheduler": "none",
+  "gradient_accumulation_steps": 1,
+  "loss_aggregation": "mean_of_batch_losses",
+  "lora": {
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.1,
+    "target_modules": [
+      "down_proj",
+      "gate_proj",
+      "k_proj",
+      "lm_head",
+      "o_proj",
+      "q_proj",
+      "up_proj",
+      "v_proj"
+    ]
+  },
+  "n_train_examples": 8725,
+  "n_val_examples": 748,
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "split_hash": "bfa4cd0184d025f036f1e8b9edb2893c9be6efb81c5ced24711695b3c7c88aea",
+  "code_hash": "3ea129bd9aaf0bca79b0c726841d71edc12cbd2475649b907d52317b5cedb697",
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.57.1",
+    "datasets": "4.2.0",
+    "bitsandbytes": "0.48.1",
+    "accelerate": "1.10.1",
+    "ipykernel": "6.30.1",
+    "scikit-learn": "1.7.2",
+    "pandas": "2.3.3"
+  },
+  "wall_clock_seconds": 854.400581314927,
+  "peak_gpu_memory_gb": 7.900526523590088,
+  "n_base_params": 1543714304,
+  "n_total_params": 1554174464,
+  "n_trainable_params": 10460160,
+  "trainable_param_pct": 0.6730364088648416,
+  "trainable_param_fraction": 0.006730364088648416,
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.1,
+  "lora_target_modules": [
+    "down_proj",
+    "gate_proj",
+    "k_proj",
+    "lm_head",
+    "o_proj",
+    "q_proj",
+    "up_proj",
+    "v_proj"
+  ],
+  "status": "complete",
+  "fingerprint": "dfddde03efc06624aa0f90f858693d024702dc81079ffed637aa2efb28dc3528",
+  "extension_protocol_hash": "94c45ee530382078b4f9a55a9f9d75191b048297dbe9532173b6df9619610928",
+  "adapter_sha256": "06dd00710fc782231736ea5ffc003582503479f2bada36dd45ebd809e792691c",
+  "protocol_hash": "94c45ee530382078b4f9a55a9f9d75191b048297dbe9532173b6df9619610928",
+  "training_data_hash": "ab613a82c724c3576f10d0d68015258ad267ff721364cd2c7edfe1b7f4d8d3b8",
+  "loss_validation_data_hash": "3575d07cf1c6b0fb518c2134592f539386443c9ce4eda22c3f950dc99ea6592e"
+}

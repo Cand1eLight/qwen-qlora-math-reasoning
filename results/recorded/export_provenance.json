@@ -1,0 +1,15 @@
+{
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "gsm8k_revision": "740312add88f781978c0658806c59bc2815b9866",
+  "svamp_revision": "5e0bf1e5e7c0e9c4bc39180d224f41f3f801b7ef",
+  "recorded_notebook_code_sha256": "3ea129bd9aaf0bca79b0c726841d71edc12cbd2475649b907d52317b5cedb697",
+  "portable_notebook_code_sha256": "9f4e2186d2ed57b97994a7bc9bd217699027b0102e2814d61aceebdfca8b8f03",
+  "export_transformations": [
+    "Omit repeated chat prompts and worked gold solutions from bulk predictions.",
+    "Keep generated output, example ID, numerical gold, extraction flag, and correctness flag.",
+    "Replace local filesystem paths with project-relative paths."
+  ],
+  "required_prediction_rows": 6957,
+  "optional_evaluation_rows": 18,
+  "export_date": "2026-10-02"
+}
